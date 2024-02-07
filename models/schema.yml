@@ -53,3 +53,10 @@ sources:
             description: the cost of preparing the parcel in the warehouse
           - name: ship_cost
             description: the shipping cost paid by greenweez to the carrier/transporter
+
+models:
+  - name: finance_days
+    columns:
+      - name: date_date
+        tests:
+          - dbt_utils.not_empty_string
